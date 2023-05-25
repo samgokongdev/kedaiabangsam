@@ -11,8 +11,8 @@ export default async function RecomendationMenu() {
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-3">
-      {products.products.map((product, id) => (
-        <div key={id}>{product.title}</div>
+      {products.products.map((product) => (
+        <div key={product.id}>{product.title}</div>
       ))}
     </section>
   );

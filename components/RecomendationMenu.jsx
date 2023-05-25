@@ -15,6 +15,7 @@ export default async function RecomendationMenu() {
     <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-3">
       {products.products.map((product, id) => (
         <ShopCard
+          id={product.id}
           key={id}
           title={product.title}
           price={product.price / 1000 + "K"}

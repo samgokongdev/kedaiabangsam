@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ShopCard({ title, price, pack, imagesrc, key }) {
+export default function ShopCard({ id, title, price, pack, imagesrc, key }) {
   return (
-    <Link href="/detail" key={key}>
+    <Link href={`/detail/${id}`} key={key}>
       <div className="flex items-center justify-between w-full border-gray-600 border-2 rounded-lg px-4 py-3 hover:scale-95">
         <div className="flex space-x-4">
           <div>

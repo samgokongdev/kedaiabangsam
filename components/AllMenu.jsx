@@ -18,6 +18,7 @@ export default async function AllMenu() {
       <Suspense fallback={<Loading />}>
         {products.products.map((product, id) => (
           <ShopCard
+            id={product.id}
             key={id}
             title={product.title}
             price={product.price / 1000 + "K"}
